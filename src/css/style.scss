@@ -1,0 +1,462 @@
+//global css start
+
+@import "../sass/global";
+
+//global css end
+
+//index page start
+
+////////////////////////////
+
+
+// master class start
+
+.hero {
+    @include media-breakpoint-up-xtralarge-screen {
+        background-color: $secondary;
+        min-height: 650px;
+        height: calc(100vh - 72px);
+        padding-top: em(128);
+        padding-bottom: em(16);
+    }
+
+    padding-top: em(32);
+    height: auto;
+    min-height: 650px;
+    padding-bottom: em(40);
+    background-color: $secondary;
+    padding-top: em(128);
+
+    @include media-breakpoint-down-desktop {
+        padding-top: em(32);
+        height: auto;
+        min-height: auto;
+        padding-bottom: em(40);
+    }
+}
+
+
+.hero__icon {
+    color: $primary;
+    font-size: em(80);
+    display: block;
+    text-align: center;
+}
+
+// master class end
+// join start
+
+.join {
+    padding: em(16) em(32);
+    border-radius: em(16);
+    box-shadow: 0 0 13px 0px #0000002e;
+    position: absolute;
+    top: -47px;
+    background-color: white;
+
+    @include media-breakpoint-down-desktop {
+        position: relative;
+        top: 0px;
+        border-radius: 0px;
+        box-shadow: 0 0 0px 0px #0000002e;
+        padding: em(32);
+    }
+}
+
+.join__head {
+    font-size: em(16);
+    font-weight: 700;
+    padding-bottom: em(12);
+}
+
+.join__subheading {
+    font-size: em(12);
+    color: gray;
+    padding-bottom: em(12);
+}
+
+//join end
+
+//master classess start
+
+.master {
+    background-image: linear-gradient(white 50%, $primary 50%);
+
+    @include media-breakpoint-down-desktop {
+        background-image: linear-gradient(white 50%, white 50%);
+        padding-top: em(48);
+    }
+}
+
+.classess {
+    padding-top: em(32);
+
+    @include media-breakpoint-down-desktop {
+        border: 1px solid $primary;
+        background-color: $primary;
+        border-radius: em(24);
+    }
+}
+
+.classess__img {
+    width: 150px;
+    height: 150px;
+    background-color: #787878;
+    border-radius: em(45);
+    margin: 0 auto em(32);
+}
+
+//master classess start
+
+//portfolio start
+
+.portfolio__img {
+    background-color: #787878;
+    width: 100%;
+    height: 213px;
+    display: block;
+    border-radius: em(48);
+}
+
+//portfolio end
+
+//index page end
+
+////////////////////////////
+
+////////////////////////////
+
+
+
+// services page start
+
+////////////////////////////
+
+// latest profile start
+.latest {
+    background-color: $primary-2;
+}
+
+.latest__img {
+    width: 100%;
+    height: 315px;
+    border-radius: em(32);
+    background-color: #787878;
+}
+
+// latest profile end
+
+
+
+// services page end
+
+////////////////////////////
+
+
+////////////////////////////
+
+// gallery page start
+
+////////////////////////////
+
+// wonderful gallery start
+
+.gallery__img {
+    width: 100%;
+    height: 230px;
+    background-color: #787878;
+    border-radius: em(48);
+}
+
+.gallery__img--model {
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+        content: "class model";
+        text-transform: uppercase;
+        background-color: #d8cd00;
+        color: white;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 22px;
+        right: -52px;
+        width: 202px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 20px 0px #00000061;
+    }
+}
+
+
+// wonderful gallery end
+
+// practice classess start
+
+.practice__img {
+    width: 100%;
+    height: 232px;
+    background-color: #787878;
+    border-radius: em(48);
+}
+
+// practice classess end
+
+
+// gallery page start
+
+////////////////////////////
+
+
+////////////////////////////
+
+
+// testimony page start
+
+// testimonials start
+
+.testimonials {
+    text-align: center;
+    padding: em(32);
+    box-shadow: 0 0 10px #00000047;
+}
+
+.testimonials__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #787878;
+    margin: 0 auto em(43);
+}
+
+.star {
+    font-size: em(24);
+}
+
+// testimonials end
+
+//pricelist start
+.product__price {
+    .pricelist {
+        padding: em(32);
+        background-color: white;
+        box-shadow: 0 0 em(13) #0000003b;
+        transform: scale(1, 1);
+        cursor: pointer;
+    }
+
+    .pricelist__get {
+        color: #d8cd00;
+        font-weight: 900;
+        font-size: em(28);
+    }
+
+    .pricelist__price {
+        font-size: rem(32);
+        color: #d8cd00;
+        font-weight: 700;
+
+        span {
+            font-size: rem(72);
+        }
+    }
+
+    .pricelist__listing {
+        margin-top: em(28);
+        font-size: em(12);
+        margin-bottom: em(40);
+
+        li {
+            padding-top: em(16);
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+            span {
+                font-size: em(24);
+                color: #d8cd00;
+                margin-right: em(16);
+            }
+        }
+    }
+
+
+    .button--buy {
+        background-color: #d8cd00;
+        color: white;
+        box-shadow: 0px 2px 5px #938b024d;
+
+        &:hover {
+            color: white !important;
+        }
+    }
+
+
+    .button--cart {
+        border-color: #c8c8c8;
+        color: white;
+        background-color: #c8c8c8;
+        box-shadow: 0px 2px 5px #938b024d;
+
+        &:hover {
+            color: white !important;
+        }
+    }
+}
+
+.product__price--hover {
+    .pricelist {
+        padding: em(32);
+        background-color: $primary;
+        box-shadow: 0 0 em(13) #0000003b;
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+    }
+
+    .pricelist__head {
+        color: white;
+    }
+
+    .pricelist__get {
+        color: white;
+        font-weight: 900;
+        font-size: em(28);
+    }
+
+    .pricelist__price {
+        font-size: rem(32);
+        color: white;
+        font-weight: 700;
+
+        span {
+            font-size: rem(72);
+        }
+    }
+
+    .pricelist__content {
+        color: white;
+    }
+
+    .pricelist__listing {
+        margin-top: em(28);
+        font-size: em(12);
+        margin-bottom: em(40);
+        color: white;
+
+        li {
+            padding-top: em(16);
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+            span {
+                font-size: em(24);
+                color: white;
+                margin-right: em(16);
+            }
+        }
+    }
+
+
+    .button--buy {
+        background-color: white;
+        color: $primary;
+        box-shadow: 0px 2px 5px #938b024d;
+        border-color: white;
+
+        &:hover {
+            color: $primary !important;
+        }
+    }
+
+
+    .button--cart {
+        border-color: $primary;
+        color: white;
+        background-color: $primary;
+        box-shadow: 0px 2px 5px #938b024d;
+
+        &:hover {
+            color: white !important;
+        }
+    }
+}
+
+//pricelist end
+
+
+// contact us start
+
+.contact__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        font-size: rem(32);
+        background-color: white;
+        width: rem(80);
+        height: rem(80);
+        box-shadow: 5px 5px 9px #00000038;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        color: $primary;
+    }
+}
+
+.contact-detail {
+    p {
+        font-size: rem(13);
+    }
+}
+
+.button--send {
+    width: 227px;
+    border: 1px solid #39b54a;
+    background-color: #39b54a;
+    color: white;
+    font-weight: 600;
+    margin: em(32) auto;
+    display: block;
+    border-radius: em(4);
+    height: em(38);
+    line-height: em(38);
+    font-size: rem(14);
+}
+
+.contact {
+    .form-control {
+        border-color: transparent;
+        border-radius: 0px;
+        margin-bottom: em(24);
+        box-shadow: 0px 0px em(12) #0000003b;
+        height: em(48);
+        font-size: em(14);
+        color: #8c8d8e;
+        padding-left: em(40);
+    }
+
+    textarea {
+        resize: none;
+        height: 136px !important;
+    }
+
+    .input__icon {
+            position: absolute;
+            z-index: 999;
+            top: em(2);
+            left: em(4);
+            color: #8c8d8e;
+            font-size: rem(24);
+        }
+}
+
+// contact us end
+
+// testimony page start
+
+////////////////////////////

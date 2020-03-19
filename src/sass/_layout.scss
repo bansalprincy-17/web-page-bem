@@ -1,0 +1,15 @@
+.circle{
+    color:$primary;
+    display: block;
+    text-align: center;
+    font-size: em(24);
+}
+
+
+.text-primary {
+    color: $primary !important;
+}
+
+.min-height-200{
+    min-height:200px;
+}
